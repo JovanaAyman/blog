@@ -1,0 +1,15 @@
+<%= stylesheet_link_tag params[:controller] %>
+<h1  class='center'>Articles</h1>
+
+<h4  class='center'>Our blog has <%= Article.public_count %> articles and counting!</h4>
+
+<ul>
+  <% @articles.each do |article| %>
+    <li>
+      <%= link_to article.title, article %>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to "New Article", new_article_path , :class => 'button' %>
+

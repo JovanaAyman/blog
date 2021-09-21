@@ -1,0 +1,44 @@
+
+  
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+    padding-top: 60px;
+  }
+  
+  section {
+    overflow: auto;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  .center {
+    text-align: center;
+  }
+  
+  .center h1 {
+    margin-bottom: 10px;
+  }
+  
+a {
+    text-decoration: none;     
+    font-family: Arial;        
+    font-weight: bold;          
+}
+a:hover {
+    color:yellow;
+}
+a:visited {
+    color: clear;
+}
+h1{
+   color: red;
+}
+
+  ul {
+    display: table;
+    margin: 0 auto;
+  }

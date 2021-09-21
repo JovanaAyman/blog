@@ -1,0 +1,20 @@
+<%= stylesheet_link_tag params[:controller] %>
+
+<h1 class="center"><%= @article.title %></h1>
+
+<h2 class="center"><%= @article.body %></h2>
+
+<ul>
+  <li><%= link_to "Edit", edit_article_path(@article) %></li>
+  <li><%= link_to "Destroy", article_path(@article),
+                  method: :delete,
+                  data: { confirm: "Are you sure?" } %></li>
+</ul>
+
+<div class="center">
+<h2 >Comments</h2>
+<%= render @article.comments %>
+
+<h2>Add a comment:</h2>
+<%= render 'comments/form'  , :class => 'button' %>
+</div>
